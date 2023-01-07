@@ -31,13 +31,18 @@ module1_task2
 * The website is expected to be generated into the directory
 module1_task2/dist/
 * GNU Make version 3.81 or 4.0 must be used
+* The “Build” step should be executed by the command make build, “Clean” by
+make clean and “Post” by make post.
 
 ## Lifecycle
 
 * build: Generate the website from the markdown and configuration files in the
 directory dist/.
+* clean: Cleanup the content of the directory dist/
 * post: Create a new blog post whose filename and title come from the environment
 variables POST_TITLE and POST_NAME.
+* package: produces a file awesome-website.zip that containing the dist/ directory
+* lint: correct readme's
 * help: Shows a short help description about Makefile usage.
 
 ## Usage
@@ -53,10 +58,15 @@ welcome.md
 ➜ ls -1 ./content/posts/
 welcome.md who-are-we.md
 
+➜ make clean
+➜ ls -1 ./dist/
+➜
+
 ➜ make help
 ➜
  build: Generate the website from the markdown and configuration files in the
  directory dist/.
+ clean: Cleanup the content of the directory dist/
  post: Create a new blog post whose filename and title come from the
  environment variables POST_TITLE and POST_NAME.
 
