@@ -17,9 +17,4 @@ lint: ## lint format
 	markdownlint README.md DEPLOY.md
 
 help: ## Show this help usage
-	@echo "build: Generate the website from the markdown and configuration files in the directory dist/."
-	@echo "Cleanup the content of the directory dist/."
-	@echo "post: Create a new blog post whose filename and title come from the environment variables POST_TITLE and POST_NAME."
-	@echo "package: Create a file awesome-website.zip, that containing the directory dist/"
-	@echo "lint: check link format"
-	@echo "help: Show this help usage"
+	@awk '/[^#]*##[^#]*/{printf "%s %s\n", $$1, substr($$0, index($$0,"##")+2)}' Makefile | head -n -1
