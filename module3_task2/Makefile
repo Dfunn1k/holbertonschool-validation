@@ -1,7 +1,7 @@
 build:	## Generate the website from the markdown and configuration files in the directory dist/.
 	hugo
 
-clean:	## ERROR: No entry found for target clean in make help command
+clean:
 	rm -rf dist/*
 	rm awesome-website.zip
 
@@ -13,7 +13,7 @@ package:	## produces a file awesome-website.zip that containing the dist/ direct
 	make build
 	zip -r awesome-website.zip dist/
 
-lint:	## check link format
+lint:
 	markdownlint README.md DEPLOY.md
 
 help:	## Show this help usage
