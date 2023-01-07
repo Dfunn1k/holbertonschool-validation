@@ -61,4 +61,4 @@ welcome.md who-are-we.md
 
 ### This workflow must be triggered
 * Each time there is new code pushed on your repository
-* And once per day (whatever time you want).
+* And once per day, whatever time you want.
