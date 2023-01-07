@@ -1,0 +1,23 @@
+---
+name: module3_task1
+on:
+  push:
+    paths:
+      - 'module3_task1/**'
+  schedule:
+    - cron: '0 8 * * *'
+jobs:
+  task1:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v3
+      - name: setup
+        run: |
+          cd module3_task1
+          ./setup.sh
+      - name: validate makefile
+        run: |
+          cd module3_task1
+          make build
+  build:
