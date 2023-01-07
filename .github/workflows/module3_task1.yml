@@ -20,4 +20,3 @@ jobs:
         run: |
           cd module3_task1
           make build
-  build:
