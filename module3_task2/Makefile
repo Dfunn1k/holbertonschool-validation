@@ -13,6 +13,12 @@ package: ## produces a file awesome-website.zip that containing the dist/ direct
 	make build
 	zip -r awesome-website.zip dist/
 
+unit-tests: ## ERROR: No comment found for target unit-tests in ./Makefile
+
+integration-tests: ## ERROR: No comment found for target integration-tests in ./Makefile
+
+validate: ## ERROR: No comment found for target validate in ./Makefile
+
 lint: ## lint format
 	markdownlint README.md DEPLOY.md
 
