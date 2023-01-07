@@ -1,7 +1,7 @@
 build:	## Generate the website from the markdown and configuration files in the directory dist/.
 	hugo
 
-clean:
+clean:	## Cleanup the content of the directory dist/ and delete awesome-website.zip
 	rm -rf dist/*
 	rm awesome-website.zip
 
@@ -21,4 +21,5 @@ help:	## Show this help usage
 	@echo "clean: Cleanup the content of the directory dist/ and delete awesome-website.zip"
 	@echo "post: Create a new blog post whose filename and title come from the environment variables POST_TITLE and POST_NAME."
 	@echo "package: Create a file awesome-website.zip, that containing the directory dist/"
+	@echo "lint": check link format"
 	@echo "help: Show this help usage"
