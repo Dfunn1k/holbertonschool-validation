@@ -1,7 +1,7 @@
 build:	## Generate the website from the markdown and configuration files in the directory dist/.
 	hugo
 
-clean:
+clean:	## No comment found for target clean in ./Makefile
 	rm -rf dist/*
 	rm awesome-website.zip
 
