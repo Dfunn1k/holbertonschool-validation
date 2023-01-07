@@ -14,5 +14,7 @@ jobs:
       - name: checkout release
         uses: actions/checkout@v2 # Clona el repositorio
       - name: validate makefile
-        run: cd ../../module3_task0 ; make help
+        run: |
+          cd module3_task0
+          make help
 
