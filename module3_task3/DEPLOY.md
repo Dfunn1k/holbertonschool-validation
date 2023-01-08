@@ -21,7 +21,7 @@ in the file config.toml
 
 change publishDIr
 publishDir = 'dist'
-
+tag
 ## How to “quickly” verify that the application is running (healthcheck)?
 
 abre la pagina en tu servidor local
