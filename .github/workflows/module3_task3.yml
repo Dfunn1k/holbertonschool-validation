@@ -63,7 +63,7 @@ jobs:
             # Hello, here we will answer some questions that may arise regarding the deploy
             ## What is in the archive and how to unarchive it?
             in the file 'awesome-website.zip' the files in the dist/ directory are
-            compressed and you can unzip it as follows
+            compressed and you can unzip it as follows.
             ➜ unzip awesome-website.zip
             ## What are the commands to start and stop the application?
             you can use the following command
