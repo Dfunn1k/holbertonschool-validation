@@ -1,0 +1,76 @@
+---
+name: module3_task3
+on:
+  push:
+    paths:
+      - 'module3_task3/**'
+    tags:
+      - "v1.0.0"
+  schedule:
+    - cron: '0 8 * * *'
+jobs:
+  task1:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v3
+      - name: install node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+      - name: setup
+        run: |
+          cd module3_task3
+          ./setup.sh
+      - name: validate makefile
+        run: |
+          cd module3_task3
+          make build
+      - name: create package
+        run: |
+          cd module3_task3
+          make package
+      - name: make lint
+        run: |
+          cd module3_task3
+          make lint
+      - name: unit-tests
+        run: |
+          cd module3_task3
+          make unit-tests
+      - name: integration-tests
+        run: |
+          cd module3_task3
+          make integration-tests
+      - name: validate
+        run: |
+          cd module3_task3
+          make validate
+      - name: Archive awesome compressed
+        uses: actions/upload-artifact@v3
+        with:
+          path: |
+            ./module3_task3/awesome-website.zip
+            ./module3_task3/DEPLOY.md
+      - name: release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/1.0.0')
+        with:
+          files: |
+            module3_task3/awesome-website.zip
+          body: |
+            # Hello, here we will answer some questions that may arise regarding the deploy
+            ## What is in the archive and how to unarchive it?
+            in the file 'awesome-website.zip' the files in the dist/ directory are
+            compressed and you can unzip it as follows
+            ➜ unzip awesome-website.zip
+            ## What are the commands to start and stop the application?
+            you can use the following command
+            ➜ hugo server -d
+            ## How to customize where the application logs are written?
+            in the file config.toml
+            ## config.toml
+            change publishDIr
+            publishDir = 'dist'
+            ## How to “quickly” verify that the application is running (healthcheck)?
+            abre la pagina en tu servidor local
