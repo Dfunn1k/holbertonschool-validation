@@ -16,7 +16,7 @@ This project needs the following tools / services:
 (ls, cd, etc.) with:
   * GNU Make in version 3.81+
   * Git (command line) in version 2+
-  * Go Hugo v0.80+
+  * Go Hugo v0.80+.
   * A text editor or IDE (Visual Code, Notepad++, Vim, Emacs, IntelliJ, etc.)
 
 ## Prerequisites
