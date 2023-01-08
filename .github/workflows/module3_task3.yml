@@ -60,7 +60,6 @@ jobs:
         with:
           files: module3_task3/awesome-website.zip
           body: |
-            tag 1.0.0
             # Hello, here we will answer some questions that may arise
             regarding the deploy.
             ## What is in the archive and how to unarchive it?
@@ -79,3 +78,4 @@ jobs:
             ## How to “quickly” verify that the application is running
             (healthcheck)?
             abre la pagina en tu servidor local
+            ## tag 1.0.0
