@@ -6,6 +6,8 @@ on:
       - 'module3_task3/**'
     tags:
       - "v1.0.0"
+    branches:
+      - 'main'
   schedule:
     - cron: '0 8 * * *'
 jobs:
