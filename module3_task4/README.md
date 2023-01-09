@@ -19,7 +19,7 @@ This project needs the following tools / services:
   * Go Hugo v0.80+.
   * A text editor or IDE (Visual Code, Notepad++, Vim, Emacs, IntelliJ, etc.)
 
-## Prerequisitess
+## Prerequisites
 
 * Use the theme “ananke” for the website
 * The website title should be “Awesome Inc.”
