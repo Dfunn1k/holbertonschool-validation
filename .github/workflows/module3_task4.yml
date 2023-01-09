@@ -3,7 +3,7 @@ name: module3_task4
 on:
   pull_request:
     branches:
-      - 'master'
+      - 'main'
   push:
     paths:
       - 'module3_task4/**'
