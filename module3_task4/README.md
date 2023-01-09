@@ -22,7 +22,7 @@ This project needs the following tools / services:
 ## Prerequisites
 
 * Use the theme “ananke” for the website
-* The website title should be “Awesome Inc.”
+* The website titles should be “Awesome Inc.”
 * The contents consists in a single blog post which title should be \
 “Welcome to Awesome Inc.”, stored in a file named welcome.md
 * All of the website’s source code is stored under a directory \
