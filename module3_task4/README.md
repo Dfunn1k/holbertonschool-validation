@@ -10,7 +10,7 @@ automation is useful and helps speeding a development lifecycle.
 
 This project needs the following tools / services:
 
-* An HTML5-compliant web browser (Firefox, Chrome, Opera, Safari, Edge, etc.)
+* An HTML5-compliant web browsser (Firefox, Chrome, Opera, Safari, Edge, etc.)
 * A free account on GitHub, referenced as GitHub Handle
 * A shell terminal with bash, zsh or ksh, including the standard Unix toolset \
 (ls, cd, etc.) with:
