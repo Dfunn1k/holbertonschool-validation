@@ -61,7 +61,6 @@ jobs:
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: |
-            CI_CD/module3_task4/awesome-website.zip
-            CI_CD/module3_task4/DEPLOY.md
+          files: module3_task4/awesome-website.zip
+          body_path: ./module3_task4/DEPLOY.md
 
