@@ -65,7 +65,7 @@ jobs:
           body_path: ./module3_task4/DEPLOY.md
       - name: Create check run
         if: success()
-        uses: actions/create-check-run@v3
+        uses: actions/create-check-run@v2
         with:
           name: ci/build
           status: success
