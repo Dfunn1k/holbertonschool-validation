@@ -6,7 +6,7 @@ value to a software project by automating it, which decreases the amount \
 of manual work and increases the development speed. It focuses on why \
 automation is useful and helps speeding a development lifecycle.
 
-## Tooling.
+## Tooling
 
 This project needs the following tools / services:
 
