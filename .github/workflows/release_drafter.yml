@@ -5,6 +5,8 @@ on:
   push:
     branches:
       - master
+    paths:
+      - 'module3_task4/**'
   pull_request:
     branches : 
       - master
