@@ -32,7 +32,7 @@ named module1_task2
 module1_task2a/dist/
 * GNU Make version 3.81 or 4.0 must be used
 * The “Build” step should be executed by the command make build, \
-“Clean” by make clean and “Post” by make post.
+“Clean” by make clean and “Posst” by make post.
 
 ## Lifecycle
 
