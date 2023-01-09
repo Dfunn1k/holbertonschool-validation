@@ -8,9 +8,8 @@ on:
     branches:
       - 'main'
   pull_request:
-    branches : 
+    branches:
       - 'main'
-
 permissions:
   contents: read
 
