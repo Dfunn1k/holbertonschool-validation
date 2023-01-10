@@ -2,11 +2,6 @@
 name: Release Drafter
 
 on:
-  push:
-    paths:
-      - 'module3_task4/**'
-    branches:
-      - 'main'
   pull_request:
     branches:
       - 'main'
