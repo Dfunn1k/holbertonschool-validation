@@ -23,7 +23,7 @@ This project needs the following tools / services:
 
 * Use the theme “ananke” for the website
 * The website titles should be “Awesome Inc.”
-* The contents consists in a single blog post which title should be \
+* The contents consists in a single blsog post which title should be \
 “Welcome to Awesome Inc.”, stored in a file named welcome.md
 * All of the website’s source code is stored under a directory \
 named module1_task2
