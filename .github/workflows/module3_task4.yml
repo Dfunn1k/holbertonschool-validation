@@ -4,6 +4,7 @@ on:
   pull_request:
     branches:
       - 'main'
+      - 'master'
   push:
     paths:
       - 'module3_task4/**'
@@ -11,6 +12,7 @@ on:
       - "*.*.*"
     branches:
       - 'main'
+      - 'master'
   schedule:
     - cron: '0 8 * * *'
 jobs:

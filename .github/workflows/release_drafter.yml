@@ -7,9 +7,11 @@ on:
       - 'module3_task4/**'
     branches:
       - 'main'
+      - 'master'
   pull_request:
     branches:
       - 'main'
+      - 'master'
 permissions:
   contents: read
 
@@ -21,5 +23,7 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: release-drafter/release-drafter@v5
+        with:
+          publish: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
