@@ -4,7 +4,7 @@ name: release_drafter
 on:
   push:
     paths:
-      - 'module3_task4/**'
+      - 'module3_task5/**'
     branches:
       - 'main'
       - 'master'
